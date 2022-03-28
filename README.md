@@ -5,5 +5,5 @@ An utility library for async tasks; man add-on to  async.js
 ```
 import * as async from '@dreamworld/async';
 
-async.sequentialExec(key, () => async function());
+async.sequentialExec(key, () => asyncFn());
 ```
