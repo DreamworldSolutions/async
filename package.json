@@ -1,0 +1,27 @@
+{
+  "name": "@dreamworld/async",
+  "version": "0.0.0-development",
+  "description": "An utility library for async tasks; man add-on to async.js",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/DreamworldSolutions/async.git",
+  "author": "Dhruval Kodinariya <dhruval@hisab.co>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "semantic-release": "17.0.8"
+  },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      {
+          "name": "feature/*",
+          "prerelease": "${name.replace(/^feature\\//g, \"\")}",
+          "channel": "${name.replace(/^feature\\//g, \"\")}"
+      }
+    ]
+  }
+}
